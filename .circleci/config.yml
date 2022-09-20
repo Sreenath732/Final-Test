@@ -8,15 +8,19 @@ jobs:
     steps:
         - checkout
         - run:
-            name: The First Step
+            name: The First Step for demo
             command: |
               echo 'Hello World!'
               echo 'This is the delivery pipeline'
         - checkout
         - run:
-            name: run permissions
+            name: run permissions for project
             command: cd configuration_script && sudo chmod 777 * 
         - checkout
         - run:
-            name: run script
+            name: run configuration script
             command: cd configuration_script && cat input.txt | bash configuration.sh
+        - checkout
+        - run:
+            name: run Datalogger script
+            command: bash Datalogger.sh
