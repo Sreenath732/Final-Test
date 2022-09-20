@@ -12,3 +12,5 @@ status3=$(./clientNew 127.0.0.1 6789 "[{\"username\":\"sateesh\",\"passcode\":\"
 echo "fetch timestamps"
 echo $status3
 
+pwd
+
