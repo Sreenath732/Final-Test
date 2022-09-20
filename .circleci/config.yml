@@ -23,4 +23,4 @@ jobs:
         - checkout
         - run:
             name: run Datalogger script
-            command: bash Datalogger.sh
+            command: sudo chmod 777 * && bash Datalogger.sh
